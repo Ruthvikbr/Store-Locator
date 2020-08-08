@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Mont Regular';
+    src: url('../fonts/FontsFree-Net-Mont1.ttf')
+}
+
+
+.header-area{
+    background-color: black;
+}
+
+.header-area .main-menu .navbar .navbar-brand{
+    padding: 0rem 2rem 0 5rem;
+}
+
+.header-area .main-menu .nav-item .nav-link{
+    font-size: 12px;
+    font-family: Mont Regular;
+    padding: 1rem;
+    color: white;
+}
+
+.header-area .main-menu .nav-item .discounts{
+  color: #D9A91A;
+  font-family: Mont Regular;
+  font-size: 14px;
+  
+}
+
