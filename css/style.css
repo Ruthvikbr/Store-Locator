@@ -10,9 +10,14 @@
 }
 
 .header-area .main-menu .navbar .navbar-brand{
-    padding: 0rem 1rem 0 2rem;
+    widows: 200px;
 }
 
+.header-area .main-menu .navbar img{
+    height: 50px;
+    float: left;
+    margin-right: 7px;
+}
 .header-area .main-menu .nav-item .nav-link{
     font-size: 11px;
     font-family: Mont Regular;
