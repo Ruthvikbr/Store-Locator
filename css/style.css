@@ -3,17 +3,18 @@
     src: url('../fonts/FontsFree-Net-Mont1.ttf')
 }
 
+/* Start Header area */
 
 .header-area{
     background-color: black;
 }
 
 .header-area .main-menu .navbar .navbar-brand{
-    padding: 0rem 2rem 0 5rem;
+    padding: 0rem 1rem 0 2rem;
 }
 
 .header-area .main-menu .nav-item .nav-link{
-    font-size: 12px;
+    font-size: 11px;
     font-family: Mont Regular;
     padding: 1rem;
     color: white;
@@ -22,7 +23,32 @@
 .header-area .main-menu .nav-item .discounts{
   color: #D9A91A;
   font-family: Mont Regular;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
   
 }
 
+/* enable absolute positioning */
+.header-area .main-menu .inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.header-area .main-menu .inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.header-area .main-menu .right-addon .fa { right: 5px;}
+
+/* add padding  */
+.header-area .main-menu .right-addon input { padding: 20px; }
+
+.header-area .main-menu .right-addon .form-control{
+    padding:20px;
+    font-size: smaller;
+}
+
+/* Finish Header area */
