@@ -16,6 +16,16 @@
     <!--link Font Awesome css -->
     <link rel="stylesheet" href="./css/all.min.css">
 
+    <!-- link Leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+
+    <!-- link Leaflet script file -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
 
 </head>
 
@@ -80,7 +90,7 @@
 
     <!-- Start Secondary Navigation area -->
 
-    <div class="row">
+    <div class="secondary-area">
         <ul id="menu">
             <li>Brands</li>
             <li id="active">Makeup</li>
@@ -100,13 +110,133 @@
 
 
     <!-- Start Banner Area -->
-
     <div class="img-responsive custom-banner-image">
         <div class="text">Our Stores</div>
     </div>
-
-
     <!-- End Banner Area -->
+
+    <!-- Start Address area -->
+
+
+    <div class="address-area ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="address-item">
+
+                        <p class="Area">Jubilee Hills</p>
+                        <p class="address">Road No.36, Jubilee Hills,<br>
+                            Hyderabad, Telangana-500033. <br>
+                            Phone: +91 040 6704 3636 <br>
+                            11:00 am - 9:00 pm (Monday to Sunday)</p>
+                        <div id="mapid">
+
+                            <script>
+                                var mymap = L.map('mapid').setView([17.428838, 78.413781], 13);
+                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
+                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                                    maxZoom: 18,
+                                    id: 'mapbox/streets-v11',
+                                    tileSize: 512,
+                                    zoomOffset: -1,
+                                    accessToken: 'your.mapbox.access.token'
+                                }).addTo(mymap);
+                                var marker = L.marker([17.428838, 78.413781]).addTo(mymap);
+                            </script>
+                            <!-- 17.428838, 78.413781 -->
+                            <!-- 17.390642, 78.476479 -->
+                            <!-- 17.444160, 78.487573 -->
+                            <!-- 17.440800, 78.484990 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="address-item">
+
+                        <p class="Area">Abids</p>
+                        <p class="address">Main Road, Abids,<br>
+                            Hyderabad, Telangana-500001. <br>
+                            Phone: +91 040 6656 6234 <br>
+                            11:00 am - 9:00 pm (Monday to Sunday)</p>
+                        <div id="mapid">
+                            <script>
+                                var mymap2 = L.map('mapid').setView([17.390642, 78.476479], 13);
+                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
+                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                                    maxZoom: 18,
+                                    id: 'mapbox/streets-v11',
+                                    tileSize: 512,
+                                    zoomOffset: -1,
+                                    accessToken: 'your.mapbox.access.token'
+                                }).addTo(mymap);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="address-item">
+
+                        <p class="Area">Secunderabad</p>
+                        <p class="address">Gandhi Statue Square, <br>
+                            Secunderabad, Telangana-500003. <br>
+                            Phone: +91 040 2784 6188 <br>
+                            11:00 am - 9:00 pm (Monday to Sunday)</p>
+                        <div id="mapid">
+
+                            <script>
+                                var mymap = L.map('mapid').setView([17.428838, 78.413781], 13);
+                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
+                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                                    maxZoom: 18,
+                                    id: 'mapbox/streets-v11',
+                                    tileSize: 512,
+                                    zoomOffset: -1,
+                                    accessToken: 'your.mapbox.access.token'
+                                }).addTo(mymap);
+                                var marker = L.marker([17.428838, 78.413781]).addTo(mymap);
+                            </script>
+                            <!-- 17.428838, 78.413781 -->
+                            <!-- 17.390642, 78.476479 -->
+                            <!-- 17.444160, 78.487573 -->
+                            <!-- 17.440800, 78.484990 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+
+                    <div class="address-item">
+
+                        <p class="Area">K.S Beauty Center</p>
+                        <p class="address">Kathiawar Plaza, P.G. Road, <br>
+                            Secunderabad, Telangana – 500003. <br>
+                            Phone: +91 040 66381555 <br>
+                            11:00 am - 8:30 pm (Monday to Sunday)</p>
+                        <div id="mapid">
+                            <script>
+                                var mymap2 = L.map('mapid').setView([17.390642, 78.476479], 13);
+                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
+                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+                                    maxZoom: 18,
+                                    id: 'mapbox/streets-v11',
+                                    tileSize: 512,
+                                    zoomOffset: -1,
+                                    accessToken: 'your.mapbox.access.token'
+                                }).addTo(mymap);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Address area -->
 
 
     <!-- link jquery.js -->
@@ -118,6 +248,8 @@
 
     <!-- link Less -->
     <script src="//cdn.jsdelivr.net/npm/less"></script>
+
+
 </body>
 
 </html>
