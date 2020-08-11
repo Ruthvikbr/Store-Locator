@@ -153,7 +153,7 @@
 
 .address-area .container .row .address-item p.address{
         height: 100px;
-        width: 200px;
+        width: 250px;
         color: #000000;
         font-family: Mont;
         font-size: 15px;
@@ -192,16 +192,7 @@
         width: 100%;
     }   
 
-    .address-area .container .row .address-item p.Area{
-        color: #D9A91A;
-        font-family: Mont;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 1px;
-        line-height: 22px;
-        margin-bottom: 5px;
-        text-transform: uppercase;
-    }
+    
     
     .address-area .container .row .address-item p.address{
             height: 100px;
@@ -242,5 +233,49 @@
 /* End Address area */
 
 /* Start Advantages area */
+    .advantages{
+        background-color: white;
+        padding-left: 20px;
+        padding-top: 75px;
+        padding-bottom: 150px;
+    }
+
+    .advantages .advantage{
+        float: left;
+        width: 100%;
+        
+    }
+
+    .advantages .Subscribe{
+        float: left;
+        width: 100%;
+        
+    }
+
+    .advantages .advantage img{
+        float: left;
+        margin-right: 10px;
+    }
+
+    .advantages .advantage p{
+        padding-left: 10px;
+        padding-top: 10px;
+        
+    }
+
+    .advantages .Subscribe p{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: Mont;
+        font-size: 13px;
+        color: #000000;
+    }
+
+    @media screen and (max-width: 500px) {  
+        .advantages{
+            display: none;
+        }
+    }
+   
 
 /* End Advantages area */
