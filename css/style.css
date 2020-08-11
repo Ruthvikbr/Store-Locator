@@ -95,44 +95,49 @@
 
 /* Start Banner area */
 
-    .custom-banner-image {
-        background-image: url('/images/Desktop/Bitmap\ +\ Bitmap\ Mask.png');
+.custom-banner-image {
+    background-image: url('/images/Desktop/Bitmap\ +\ Bitmap\ Mask.png');
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.custom-banner-image .text{
+    padding-top: 200px;
+    padding-left: 175px;
+    font-size: 40px;
+    font-family: MontBold;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 450px) {      
+    .custom-banner-image{      
+        background-image: url('/images/mobile/Bitmap\ +\ Bitmap\ Mask.png');
         width: 100%;
-        height: 405px;
-        background-repeat: no-repeat;
+        height: 150px;
+        background-position:top;
+        background-size: contain;
+        position: relative;
         color: white;
-    }
+    } 
 
     .custom-banner-image .text{
-        padding-top: 250px;
-        margin-left: 215px;
-        font-size: 40px;
+        padding-top: 80px;
+        margin-left: 50px;
+        font-size: 25px;
         font-family: MontBold;
     }
-
-    @media screen and (max-width: 450px) {      
-        .custom-banner-image{      
-            background-image: url('/images/mobile/Bitmap\ +\ Bitmap\ Mask.png');
-            width: 100%;
-            height: 200px;
-            background-position:top;
-            background-size: contain;
-            position: relative;
-            color: white;
-        } 
-
-        .custom-banner-image .text{
-            padding-top: 80px;
-            margin-left: 50px;
-            font-size: 25px;
-            font-family: MontBold;
-        }
-    }
+}
 
 /* End Banner area */
 
+/* Start Address area */
+
 .address-area{
-    margin-left: 215px;
+    padding-left: 125px;
+    background-color: #eeeeee;
+    padding-top: 100px;
 }
 
 .address-area .container .row .address-item p.Area{
@@ -147,8 +152,8 @@
 }
 
 .address-area .container .row .address-item p.address{
-        height: 104px;
-        width: 332px;
+        height: 100px;
+        width: 200px;
         color: #000000;
         font-family: Mont;
         font-size: 15px;
@@ -182,30 +187,36 @@
 
 @media screen and (max-width: 450px) {  
     .address-area{
-        margin-left: 10px;
+        padding-left: 0px;
     }   
     .address-area .container .row .address-item #mapid {
-        height: 200px; 
-        width: 300px;
+        height: 175px; 
+        width: 275px;
         margin-bottom: 50px;
    } 
 
    .address-area .container .row .address-item #mapid1 {
-    height: 200px; 
-    width: 300px;
-    margin-bottom: 50px;
+        height: 175px; 
+        width: 275px;
+        margin-bottom: 50px;
     } 
 
     .address-area .container .row .address-item #mapid2 {
-        height: 200px; 
-        width: 300px;
+        height: 175px; 
+        width: 275px;
         margin-bottom: 50px;
     } 
 
     .address-area .container .row .address-item #mapid3 {
-        height: 200px; 
-        width: 300px;
+        height: 175px; 
+        width: 275px;
         margin-bottom: 50px;
     } 
    
 }
+
+/* End Address area */
+
+/* Start Advantages area */
+
+/* End Advantages area */
