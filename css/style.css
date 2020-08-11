@@ -162,6 +162,24 @@
      margin-bottom: 25px;
 }
 
+.address-area .container .row .address-item #mapid1 {
+    height: 250px; 
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.address-area .container .row .address-item #mapid2 {
+    height: 250px; 
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+.address-area .container .row .address-item #mapid3 {
+    height: 250px; 
+    width: 500px;
+    margin-bottom: 25px;
+}
+
 @media screen and (max-width: 450px) {  
     .address-area{
         margin-left: 10px;
@@ -171,4 +189,23 @@
         width: 300px;
         margin-bottom: 50px;
    } 
+
+   .address-area .container .row .address-item #mapid1 {
+    height: 200px; 
+    width: 300px;
+    margin-bottom: 50px;
+    } 
+
+    .address-area .container .row .address-item #mapid2 {
+        height: 200px; 
+        width: 300px;
+        margin-bottom: 50px;
+    } 
+
+    .address-area .container .row .address-item #mapid3 {
+        height: 200px; 
+        width: 300px;
+        margin-bottom: 50px;
+    } 
+   
 }

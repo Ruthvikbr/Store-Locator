@@ -134,20 +134,12 @@
 
                             <script>
                                 var mymap = L.map('mapid').setView([17.428838, 78.413781], 13);
-                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
-                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-                                    maxZoom: 18,
-                                    id: 'mapbox/streets-v11',
-                                    tileSize: 512,
-                                    zoomOffset: -1,
-                                    accessToken: 'your.mapbox.access.token'
+                                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                                 }).addTo(mymap);
                                 var marker = L.marker([17.428838, 78.413781]).addTo(mymap);
                             </script>
-                            <!-- 17.428838, 78.413781 -->
-                            <!-- 17.390642, 78.476479 -->
-                            <!-- 17.444160, 78.487573 -->
-                            <!-- 17.440800, 78.484990 -->
+                        
                         </div>
                     </div>
                 </div>
@@ -160,23 +152,19 @@
                             Hyderabad, Telangana-500001. <br>
                             Phone: +91 040 6656 6234 <br>
                             11:00 am - 9:00 pm (Monday to Sunday)</p>
-                        <div id="mapid">
+                        <div id="mapid1">
                             <script>
-                                var mymap2 = L.map('mapid').setView([17.390642, 78.476479], 13);
-                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
-                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-                                    maxZoom: 18,
-                                    id: 'mapbox/streets-v11',
-                                    tileSize: 512,
-                                    zoomOffset: -1,
-                                    accessToken: 'your.mapbox.access.token'
-                                }).addTo(mymap);
+                                 var mymap1 = L.map('mapid1').setView([17.390642, 78.476479], 13);
+                                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                                }).addTo(mymap1);
+                                var marker = L.marker([17.390642, 78.476479]).addTo(mymap1);
                             </script>
                         </div>
                     </div>
                 </div>
             </div>
-             <div class="row">
+            <div class="row">
                 <div class="col-lg-6 col-md-12">
 
                     <div class="address-item">
@@ -186,19 +174,14 @@
                             Secunderabad, Telangana-500003. <br>
                             Phone: +91 040 2784 6188 <br>
                             11:00 am - 9:00 pm (Monday to Sunday)</p>
-                        <div id="mapid">
+                        <div id="mapid2">
 
                             <script>
-                                var mymap = L.map('mapid').setView([17.428838, 78.413781], 13);
-                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
-                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-                                    maxZoom: 18,
-                                    id: 'mapbox/streets-v11',
-                                    tileSize: 512,
-                                    zoomOffset: -1,
-                                    accessToken: 'your.mapbox.access.token'
-                                }).addTo(mymap);
-                                var marker = L.marker([17.428838, 78.413781]).addTo(mymap);
+                                var mymap2 = L.map('mapid2').setView([17.444160, 78.487573], 13);
+                                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                                }).addTo(mymap2);
+                                var marker = L.marker([17.444160, 78.487573]).addTo(mymap2);
                             </script>
                             <!-- 17.428838, 78.413781 -->
                             <!-- 17.390642, 78.476479 -->
@@ -216,17 +199,13 @@
                             Secunderabad, Telangana – 500003. <br>
                             Phone: +91 040 66381555 <br>
                             11:00 am - 8:30 pm (Monday to Sunday)</p>
-                        <div id="mapid">
+                        <div id="mapid3">
                             <script>
-                                var mymap2 = L.map('mapid').setView([17.390642, 78.476479], 13);
-                                L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=BgmxsBn92WHclpDoOqqY', {
-                                    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
-                                    maxZoom: 18,
-                                    id: 'mapbox/streets-v11',
-                                    tileSize: 512,
-                                    zoomOffset: -1,
-                                    accessToken: 'your.mapbox.access.token'
-                                }).addTo(mymap);
+                                var mymap3 = L.map('mapid3').setView([17.440800, 78.484990], 13);
+                                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                                }).addTo(mymap3);
+                                var marker = L.marker([17.440800, 78.484990]).addTo(mymap3);
                             </script>
                         </div>
                     </div>
