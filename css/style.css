@@ -124,7 +124,7 @@
 
     .custom-banner-image .text{
         padding-top: 80px;
-        margin-left: 50px;
+        padding-left: 20px;
         font-size: 25px;
         font-family: MontBold;
     }
@@ -188,7 +188,31 @@
 @media screen and (max-width: 450px) {  
     .address-area{
         padding-left: 0px;
+        padding-top: 50px; 
+        width: 100%;
     }   
+
+    .address-area .container .row .address-item p.Area{
+        color: #D9A91A;
+        font-family: Mont;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 22px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+    
+    .address-area .container .row .address-item p.address{
+            height: 100px;
+            width: 200px;
+            color: #000000;
+            font-family: Mont;
+            font-size: 15px;
+            letter-spacing: 0;
+            line-height: 26px;
+    }
+
     .address-area .container .row .address-item #mapid {
         height: 175px; 
         width: 275px;
