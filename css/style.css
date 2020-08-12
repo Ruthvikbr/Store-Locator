@@ -284,6 +284,17 @@
         font-weight: 600;
         font-size: 10px;
     }
+
+    .advantages  .Subscribe {
+        display: inline-block;
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+
+    .advantages  .Subscribe .btn-default {
+        background-color: #D9A91A !important;
+        color: white;
+    }
 }
 
 /* End Advantages area*/
