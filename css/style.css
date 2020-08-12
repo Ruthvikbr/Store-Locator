@@ -255,12 +255,18 @@
     .advantages .advantage img{
         float: left;
         margin-right: 10px;
+        width: 50px;
+        height: 50px;
     }
 
     .advantages .advantage p{
         padding-left: 10px;
-        padding-top: 10px;
+        padding-top: 5px;
         
+    }
+
+    .advantages .Subscribe{
+        padding-left: 50px;    
     }
 
     .advantages .Subscribe p{
@@ -269,13 +275,107 @@
         font-family: Mont;
         font-size: 13px;
         color: #000000;
+        
+    }
+
+    .advantages .Subscribe .btn-primary,.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+        background-color:#D9A91A !important;
+        border: 2px solid #D9A91A;
     }
 
     @media screen and (max-width: 500px) {  
-        .advantages{
-            display: none;
+
+
+
+        .advantages .advantage{
+            display: none;       
+        }
+
+        .advantages .Subscribe{
+            padding-left: 5px;
+            padding-bottom: 100px;
         }
     }
-   
-
 /* End Advantages area */
+
+
+/* Start Footer area */
+    #footer{
+        background-color: black;
+    }
+
+    #footer .row{
+        padding-top: 50px;
+    }
+
+    #footer h4{
+        font-size: 15px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    #footer .contact{
+        font-size: 12px;
+        padding-bottom: 10px;
+        color: white;
+    }
+
+    #footer a{
+        color: white;
+        padding: 0;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    #footer ul{
+        list-style: none;
+        padding-left: 0px;
+    }
+
+
+    #footer .social  img{
+        margin:  0px 10px 10px 0px;
+        display: inline-block;
+        color: #ffffff;
+        width: 15px;
+        height: 15px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    .copyright .content{ 
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0rem;
+        background-color: #282A2A;
+        padding-left: 125px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        color: white;
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 500px) {  
+        .copyright .content{ 
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0rem;
+            background-color: #282A2A;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 0;
+            color: white;
+            font-size: 10px;
+        }
+
+        #footer .row{
+            padding-top: 20px;
+        }
+
+        #footer .row .pages{
+            display: none;
+        }
+    } 
+      
+/* End Footer area */
