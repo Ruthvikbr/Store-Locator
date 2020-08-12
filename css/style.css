@@ -229,7 +229,27 @@
 
 /* End Address area */
 
-/* z */
+/* Start Advantages */
+
+
+
+.advantages .container .advantage{
+    display: inline-block;
+    margin-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.advantages .container .advantage .content{
+    padding-top: 0px;
+    vertical-align: center;
+}
+.advantages .container .advantage .content p{
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 700;
+}
+
 /* End Advantages area*/
 
 
