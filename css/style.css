@@ -242,12 +242,36 @@
 
 .advantages .container .advantage .content{
     padding-top: 0px;
-    vertical-align: center;
 }
 .advantages .container .advantage .content p{
     display: inline-block;
     margin-left: 10px;
     font-weight: 700;
+}
+
+ @media screen and (max-width: 450px) { 
+    .advantages .container .advantage{
+        display: inline;
+        margin-left: 10px;
+    }
+
+    .advantages .container .advantage .content{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .advantages .container .advantage .content img{
+        width: 25px;
+        height: 25px;
+        
+    }
+
+    .advantages .container .advantage .content p{
+        display: block;
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 10px;
+    }
 }
 
 /* End Advantages area*/
