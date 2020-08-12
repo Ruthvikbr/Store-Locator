@@ -192,11 +192,8 @@
         width: 100%;
     }   
 
-    
-    
     .address-area .container .row .address-item p.address{
             height: 100px;
-            width: 200px;
             color: #000000;
             font-family: Mont;
             font-size: 15px;
@@ -232,71 +229,8 @@
 
 /* End Address area */
 
-/* Start Advantages area */
-    .advantages{
-        background-color: white;
-        padding-left: 20px;
-        padding-top: 75px;
-        padding-bottom: 150px;
-    }
-
-    .advantages .advantage{
-        float: left;
-        width: 100%;
-        
-    }
-
-    .advantages .Subscribe{
-        float: left;
-        width: 100%;
-        
-    }
-
-    .advantages .advantage img{
-        float: left;
-        margin-right: 10px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .advantages .advantage p{
-        padding-left: 10px;
-        padding-top: 5px;
-        
-    }
-
-    .advantages .Subscribe{
-        padding-left: 50px;    
-    }
-
-    .advantages .Subscribe p{
-        text-transform: uppercase;
-        font-weight: 700;
-        font-family: Mont;
-        font-size: 13px;
-        color: #000000;
-        
-    }
-
-    .advantages .Subscribe .btn-primary,.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
-        background-color:#D9A91A !important;
-        border: 2px solid #D9A91A;
-    }
-
-    @media screen and (max-width: 500px) {  
-
-
-
-        .advantages .advantage{
-            display: none;       
-        }
-
-        .advantages .Subscribe{
-            padding-left: 5px;
-            padding-bottom: 100px;
-        }
-    }
-/* End Advantages area */
+/* z */
+/* End Advantages area*/
 
 
 /* Start Footer area */
@@ -307,7 +241,10 @@
     #footer .row{
         padding-top: 50px;
     }
-
+    #footer .container .row .pages{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
     #footer h4{
         font-size: 15px;
         padding-bottom: 10px;
@@ -342,6 +279,7 @@
         font-size: 15px;
     }
 
+
     .copyright .content{ 
         margin-left: 0px;
         margin-right: 0px;
@@ -355,13 +293,27 @@
         font-size: 12px;
     }
 
-    @media screen and (max-width: 500px) {  
+    @media screen and (max-width: 450px) {  
+        
+        #footer .row{
+            width: auto;
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+
+        #footer .row .pages{
+            display: none;
+        }
+
+
         .copyright .content{ 
+            width: auto;
             margin-left: 0px;
             margin-right: 0px;
             margin-bottom: 0rem;
             background-color: #282A2A;
-            padding-left: 50px;
+            padding-left: 25px;
+            padding-right: 0px;
             padding-top: 10px;
             padding-bottom: 10px;
             margin-top: 0;
@@ -369,13 +321,6 @@
             font-size: 10px;
         }
 
-        #footer .row{
-            padding-top: 20px;
-        }
-
-        #footer .row .pages{
-            display: none;
-        }
     } 
       
 /* End Footer area */
