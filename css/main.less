@@ -1,0 +1,364 @@
+@font-face {
+	font-family: 'MontRegular';
+	src: url('../fonts/FontsFree-Net-Mont1.ttf');
+}
+@font-face {
+	font-family: 'MontBold';
+	src: url('../fonts/FontsFree-Net-mont.ttf');
+}
+/* Start Header area */
+.header-area {
+	background-color: black;
+	.main-menu {
+		.navbar {
+			.navbar-brand {
+				widows: 200px;
+			}
+			img {
+				height: 50px;
+				float: left;
+				margin-right: 7px;
+			}
+		}
+		.nav-item {
+			.nav-link {
+				font-size: 11px;
+				font-family: MontRegular;
+				padding: 1rem;
+				color: white;
+			}
+			.discounts {
+				color: #D9A91A;
+				font-family: MontRegular;
+				font-size: 12px;
+				font-weight: 400;
+			}
+		}
+		.inner-addon {
+			position: relative;
+			.fa {
+				position: absolute;
+				padding: 10px;
+				pointer-events: none;
+			}
+		}
+		.right-addon {
+			.fa {
+				right: 5px;
+			}
+			input {
+				padding: 20px;
+			}
+			.form-control {
+				padding: 20px;
+				font-size: smaller;
+			}
+		}
+	}
+}
+/* Finish Header area */
+
+/* Start Secondary Navigation area */
+.secondary-area {
+	width: 100%;
+	ul#menu {
+		margin-bottom: 0;
+		#active {
+			background-image: linear-gradient(#D9A91A, #FED901);
+		}
+		li {
+			text-align: center;
+			font-weight: 400;
+			font-family: MontRegular;
+			font-size: 14px;
+			font-weight: 700;
+			display: inline-block;
+			padding: 20px 22px 20px 25px;
+		}
+	}
+}
+/* End Secondary Navigation area */
+
+/* Start Banner area */
+.custom-banner-image {
+	background-image: url('/images/Desktop/Bitmap\ +\ Bitmap\ Mask.png');
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	color: white;
+	.text {
+		padding-top: 200px;
+		padding-left: 175px;
+		font-size: 40px;
+		font-family: MontBold;
+		padding-bottom: 50px;
+	}
+}
+/* End Banner area */
+
+/* Start Address area */
+.address-area {
+	padding-left: 125px;
+	background-color: #eeeeee;
+	padding-top: 100px;
+	.container {
+		.row {
+			.address-item {
+				p.Area {
+					color: #D9A91A;
+					font-family: Mont;
+					font-size: 18px;
+					font-weight: 600;
+					letter-spacing: 1px;
+					line-height: 22px;
+					margin-bottom: 5px;
+					text-transform: uppercase;
+				}
+				p.address {
+					height: 100px;
+					width: 250px;
+					color: #000000;
+					font-family: Mont;
+					font-size: 15px;
+					letter-spacing: 0;
+					line-height: 26px;
+				}
+				#mapid {
+					height: 250px;
+					width: 500px;
+					margin-bottom: 25px;
+				}
+				#mapid1 {
+					height: 250px;
+					width: 500px;
+					margin-bottom: 25px;
+				}
+				#mapid2 {
+					height: 250px;
+					width: 500px;
+					margin-bottom: 25px;
+				}
+				#mapid3 {
+					height: 250px;
+					width: 500px;
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}
+/* End Address area */
+
+/* Start Advantages */
+.advantages {
+	.container {
+		.advantage {
+			display: inline-block;
+			margin-left: 30px;
+			padding-bottom: 50px;
+			padding-top: 50px;
+			.content {
+				padding-top: 0px;
+				p {
+					display: inline-block;
+					margin-left: 10px;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.Subscribe {
+		display: inline-block;
+		padding-left: 20px;
+		padding-bottom: 50px;
+		p {
+			font-weight: 700;
+		}
+		.btn-default {
+			background-color: #000000 !important;
+			color: white;
+		}
+	}
+}
+/* End Advantages area*/
+
+/* Start Footer area */
+#footer {
+	background-color: black;
+	.row {
+		padding-top: 50px;
+	}
+	.container {
+		.row {
+			.pages {
+				margin-left: 50px;
+				margin-right: 50px;
+			}
+		}
+	}
+	h4 {
+		font-size: 15px;
+		padding-bottom: 10px;
+		color: white;
+	}
+	.contact {
+		font-size: 12px;
+		padding-bottom: 10px;
+		color: white;
+	}
+	a {
+		color: white;
+		padding: 0;
+		text-decoration: none;
+		font-size: 12px;
+	}
+	ul {
+		list-style: none;
+		padding-left: 0px;
+	}
+	.social {
+		img {
+			margin: 0px 10px 10px 0px;
+			display: inline-block;
+			color: #ffffff;
+			width: 15px;
+			height: 15px;
+			line-height: 30px;
+			font-size: 15px;
+		}
+	}
+}
+.copyright {
+	.content {
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 0rem;
+		background-color: #282A2A;
+		padding-left: 125px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: 0;
+		color: white;
+		font-size: 12px;
+	}
+}
+/* End Footer area */
+
+@media screen and (max-width: 963px) {
+	.secondary-area {
+		display: none;
+	}
+}
+@media screen and (max-width: 450px) {
+	.custom-banner-image {
+		background-image: url('/images/mobile/Bitmap\ +\ Bitmap\ Mask.png');
+		width: 100%;
+		height: 150px;
+		background-position: top;
+		background-size: contain;
+		position: relative;
+		color: white;
+		.text {
+			padding-top: 80px;
+			padding-left: 20px;
+			font-size: 25px;
+			font-family: MontBold;
+		}
+	}
+	.address-area {
+		padding-left: 0px;
+		padding-top: 50px;
+		width: 100%;
+		.container {
+			.row {
+				.address-item {
+					p.address {
+						height: 100px;
+						color: #000000;
+						font-family: Mont;
+						font-size: 15px;
+						letter-spacing: 0;
+						line-height: 26px;
+					}
+					#mapid {
+						height: 175px;
+						width: 275px;
+						margin-bottom: 50px;
+					}
+					#mapid1 {
+						height: 175px;
+						width: 275px;
+						margin-bottom: 50px;
+					}
+					#mapid2 {
+						height: 175px;
+						width: 275px;
+						margin-bottom: 50px;
+					}
+					#mapid3 {
+						height: 175px;
+						width: 275px;
+						margin-bottom: 50px;
+					}
+				}
+			}
+		}
+	}
+	.advantages {
+		.container {
+			.advantage {
+				display: inline;
+				margin-left: 10px;
+				.content {
+					display: inline-block;
+					text-align: center;
+					img {
+						width: 25px;
+						height: 25px;
+					}
+					p {
+						display: block;
+						margin-left: 10px;
+						font-weight: 600;
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		.Subscribe {
+			display: inline-block;
+			padding-left: 20px;
+			padding-bottom: 50px;
+			.btn-default {
+				background-color: #D9A91A !important;
+				color: white;
+			}
+		}
+	}
+	#footer {
+		.row {
+			width: auto;
+			padding-top: 20px;
+			padding-left: 15px;
+			.pages {
+				display: none;
+			}
+		}
+	}
+	.copyright {
+		.content {
+			width: auto;
+			margin-left: 0px;
+			margin-right: 0px;
+			margin-bottom: 0rem;
+			background-color: #282A2A;
+			padding-left: 25px;
+			padding-right: 0px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			margin-top: 0;
+			color: white;
+			font-size: 10px;
+		}
+	}
+}
