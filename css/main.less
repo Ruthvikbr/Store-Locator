@@ -6,6 +6,10 @@
 	font-family: 'MontBold';
 	src: url('../fonts/FontsFree-Net-mont.ttf');
 }
+
+html , body{
+	overflow-x: hidden;
+}
 /* Start Header area */
 .header-area {
 	background-color: black;
@@ -63,9 +67,9 @@
 	width: 100%;
 	ul#menu {
 		margin-bottom: 0;
-		#active {
-			background-image: linear-gradient(#D9A91A, #FED901);
-		}
+		// #active {
+		// 	background-image: linear-gradient(#D9A91A, #FED901);
+		// }
 		li {
 			text-align: center;
 			font-weight: 400;
@@ -75,6 +79,9 @@
 			display: inline-block;
 			padding: 20px 22px 20px 25px;
 		}
+	}
+	ul#menu li:hover{
+		background-image: linear-gradient(#D9A91A, #FED901);
 	}
 }
 /* End Secondary Navigation area */
@@ -98,13 +105,14 @@
 
 /* Start Address area */
 .address-area {
-	padding-left: 125px;
+	width: 100%;
+	padding-left: 100px;
 	background-color: #eeeeee;
 	padding-top: 100px;
 	.container {
 		.row {
 			.address-item {
-				p.Area {
+				h2.Area {
 					color: #D9A91A;
 					font-family: Mont;
 					font-size: 18px;
@@ -230,6 +238,7 @@
 }
 .copyright {
 	.content {
+		width: 100%;
 		margin-left: 0px;
 		margin-right: 0px;
 		margin-bottom: 0rem;
@@ -244,7 +253,7 @@
 }
 /* End Footer area */
 
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 450px) {
 	.secondary-area {
 		display: none;
 	}
@@ -272,7 +281,7 @@
 		.container {
 			.row {
 				.address-item {
-					p.address {
+					h2.address {
 						height: 100px;
 						color: #000000;
 						font-family: Mont;
@@ -282,22 +291,22 @@
 					}
 					#mapid {
 						height: 175px;
-						width: 275px;
+						width: 90%;
 						margin-bottom: 50px;
 					}
 					#mapid1 {
 						height: 175px;
-						width: 275px;
+						width: 90%;
 						margin-bottom: 50px;
 					}
 					#mapid2 {
 						height: 175px;
-						width: 275px;
+						width: 90%;
 						margin-bottom: 50px;
 					}
 					#mapid3 {
 						height: 175px;
-						width: 275px;
+						width: 90%;
 						margin-bottom: 50px;
 					}
 				}
@@ -305,6 +314,7 @@
 		}
 	}
 	.advantages {
+		width: 100%;
 		.container {
 			.advantage {
 				display: inline;
@@ -337,7 +347,7 @@
 	}
 	#footer {
 		.row {
-			width: auto;
+			width: 100%;
 			padding-top: 20px;
 			padding-left: 15px;
 			.pages {
@@ -347,7 +357,7 @@
 	}
 	.copyright {
 		.content {
-			width: auto;
+			width: 100%;
 			margin-left: 0px;
 			margin-right: 0px;
 			margin-bottom: 0rem;
