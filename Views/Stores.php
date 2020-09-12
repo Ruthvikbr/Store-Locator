@@ -8,15 +8,15 @@
 
 
     <!-- link bootstrap.css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 
     <!-- link master.less -->
-    <link rel="stylesheet/less" type="text/css" href="css/main.less" />
+    <link rel="stylesheet/less" type="text/css" href="../css/main.less" />
     <script src="//cdn.jsdelivr.net/npm/less" ></script>
 
     <!--link Font Awesome css -->
-    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
 
     <!-- link Leaflet css -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -42,7 +42,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="images/Desktop/logo-icon.png" alt="logo"
+                <a class="navbar-brand" href="#"><img src="../images/Desktop/logo-icon.png" alt="logo"
                         class="img-responsive"></a>
 
                 <div class="col-md-4 col-sm-2">
