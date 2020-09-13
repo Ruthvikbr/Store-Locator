@@ -121,7 +121,60 @@
 
     <div class="address-area ">
         <div class="container">
-            <div class="row">
+        <?php 
+            $index = 0;
+            require('../Controller/StoreController.php');
+            $storeList = getAllStoresControl();
+
+            for($x=0;$x<count($storeList)/2;$x++){
+                echo "<div class='row'>";
+                
+                for($y=0;$y<=1&$index<count($storeList);$y++){
+                    $Store_Name = $storeList[$index]['Store_Name'];
+                    $Street_address = $storeList[$index]['Street_address'];
+                    $Store_area = $storeList[$index]['Store_area'];
+                    $Store_Phone_Number = $storeList[$index]['Store_Phone_Number'];
+                    $working_hours = $storeList[$index]['working_hours'];
+                    $Latitude = $storeList[$index]['Latitude'];
+                    $Longitude = $storeList[$index]['Longitude'];
+                    $map_id = $storeList[$index]['map_id'];
+                    
+
+                    echo "<div class='col-lg-6 col-md-12'>
+
+                    <div class='address-item'>
+
+                        <h2 class='Area'>$Store_Name</h2>
+                        <p class='address'>$Street_address<br>
+                            $Store_area <br>
+                            Phone:<a href='tel:+1-303-499-7111'>$Store_Phone_Number</a><br>
+                            $working_hours</p>
+                        <div id='$map_id'>
+
+                            <script>
+                                var i = $index; 
+                                var mapName+i = L.map('$map_id').setView([$Latitude, $Longitude], 13);
+                                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                    attribution: '&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors'
+                                }).addTo(mymap);
+                                var marker = L.marker([$Latitude, $Longitude]).addTo(mapName+i);
+                            </script>
+                              
+                        </div>
+                    </div>
+                </div>";
+                $index++; 
+                }
+                
+                echo "</div>";
+            
+            }
+
+
+
+          
+            ?>
+            <!-- <div class="row">
                 <div class="col-lg-6 col-md-12">
 
                     <div class="address-item">
@@ -166,7 +219,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-10">
+                <div class="col-lg-6 col-md-12">
 
                     <div class="address-item">
 
@@ -184,10 +237,7 @@
                                 }).addTo(mymap2);
                                 var marker = L.marker([17.444160, 78.487573]).addTo(mymap2);
                             </script>
-                            <!-- 17.428838, 78.413781 -->
-                            <!-- 17.390642, 78.476479 -->
-                            <!-- 17.444160, 78.487573 -->
-                            <!-- 17.440800, 78.484990 -->
+
                         </div>
                     </div>
                 </div>
@@ -211,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- End Address area -->
