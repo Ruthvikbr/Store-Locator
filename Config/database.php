@@ -1,6 +1,6 @@
 <?php
 
-class database
+class database_connection
 {
 	
 	protected $host = 'localhost';
@@ -8,12 +8,12 @@ class database
     protected $user = 'root';
     protected $password = '';
 
-	public function db_connect(){		
+	 function db_connect(){		
 		$link = new PDO("mysql:host=$this->host;dbname=$this->dbname", $this->user, $this->password);
         return $link;;		
     }
     
-    public function closeDbConnection(&$link)
+     function closeDbConnection(&$link)
     {
         $link = null;
     }
