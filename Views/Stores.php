@@ -138,7 +138,7 @@
                     $Latitude = $storeList[$index]['Latitude'];
                     $Longitude = $storeList[$index]['Longitude'];
                     $map_id = $storeList[$index]['map_id'];
-                    
+                    $index++; 
 
                     echo "<div class='col-lg-6 col-md-12'>
 
@@ -150,20 +150,18 @@
                             Phone:<a href='tel:+1-303-499-7111'>$Store_Phone_Number</a><br>
                             $working_hours</p>
                         <div id='$map_id'>
-
                             <script>
-                                var i = $index; 
-                                var mapName+i = L.map('$map_id').setView([$Latitude, $Longitude], 13);
-                                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                                    attribution: '&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors'
+                                var mapName = L.map('$map_id').setView([$Latitude, $Longitude], 13);
+                                L.tileLayer(`'http://{s}.tile.osm.org/{z}/{x}/{y}.png`', {
+                                    attribution: `'&copy; <a href=`'http://osm.org/copyright`'>OpenStreetMap</a> contributors`'
                                 }).addTo(mymap);
-                                var marker = L.marker([$Latitude, $Longitude]).addTo(mapName+i);
+                                var marker = L.marker([$Latitude, $Longitude]).addTo(mapName);
                             </script>
                               
                         </div>
                     </div>
                 </div>";
-                $index++; 
+                
                 }
                 
                 echo "</div>";
