@@ -38,7 +38,7 @@ class StoreModel extends database_connection{
 
     public function getAllStores(){
         $stores = array();
-		$sql = "SELECT * FROM stores";
+		$sql = "SELECT * FROM stores ORDER BY Store_id DESC";
         $link = $this->db_connect();
         $result =  $link->query($sql);
         
