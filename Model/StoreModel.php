@@ -51,6 +51,21 @@ class StoreModel extends database_connection{
         return $stores;
     }
 
+    public function getStoresForPage($start_from,$per_page){
+        $stores = array();
+		$sql = "SELECT * FROM stores ORDER BY Store_id DESC LIMIT $start_from,$per_page ";
+        $link = $this->db_connect();
+        $result =  $link->query($sql);
+        
+        if($result){
+            while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                $stores[] = $row;
+            }
+        }
+               
+        return $stores;
+    }
+
     public function getStoreById($Store_id){
         $store = array();
 		$sql = "SELECT * FROM stores WHERE `Store_id`='$Store_id'";

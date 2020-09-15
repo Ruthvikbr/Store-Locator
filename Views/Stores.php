@@ -1,3 +1,24 @@
+
+<?php
+    require('../Controller/StoreController.php');
+    $per_page=10;
+
+    if(isset($_GET['page'])){
+
+        $page = $_GET['page'];
+
+    }else{
+
+        $page=1;
+
+    }
+
+    $start_from = ($page-1) * $per_page;
+    $storeList = getStoresByPageControl($start_from,$per_page);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,8 +144,8 @@
         <div class="container">
         <?php 
             $index = 0;
-            require('../Controller/StoreController.php');
-            $storeList = getAllStoresControl();
+            
+           
 
             for($x=0;$x<count($storeList)/2;$x++){
                 echo "<div class='row'>";
@@ -167,11 +188,38 @@
                 echo "</div>";
             
             }
+        ?>
+
+        <div class="paging">
+            <ul class="pagination">
+				<?php
+                    
+                    $result = getAllStoresControl();
+                    $total_records = count($result);
+                    $total_pages = ceil($total_records / $per_page);
+                        echo "
+                            <li class='page-item'>
+                                <a class='page-link' href='Stores.php?page=1'> ".'Previous'." </a>
+                            </li>";
+
+                        for($i=1; $i<=$total_pages; $i++){
+                              echo "
+                            <li class='page-item'>
+                                <a class='page-link' href='Stores.php?page=".$i."'> ".$i." </a>
+                            </li>";
+                        };
+
+                        echo "
+                            <li class='page-item'>
+                                <a class='page-link' href='Stores.php?page=$total_pages'> ".'Next'." </a>
+                            </li>";				
+				?>
+            </ul>
+        </div>
+            
 
 
 
-          
-            ?>
             <!-- <div class="row">
                 <div class="col-lg-6 col-md-12">
 
